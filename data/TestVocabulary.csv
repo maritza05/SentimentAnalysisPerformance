@@ -1,0 +1,101 @@
+review,sentiment
+"MongoDB is a fast NoSQL database. Unfortunately, it’s not a cure for all your performance woes, and a single complex query can bring your code grinding to a halt. I recently suffered this fate, and it can be difficult to know where to look when your application suddenly becomes unstable.",0
+"I wanted to compare speed with MongoDB and I ran a test which would get and print 15 records randomly from our huge databases. I ran the query about 1,000 times each for mysql and MongoDB and I am suprised that I do not notice a lot of difference in speed. Maybe MongoDB is 1.1 times faster. That's very disappointing. Is there something I am doing wrong? I know that my tests are not perfect but is MySQL on par with MongoDb when it comes to read intensive chores.",0
+MongoDB is not magically faster.,0
+MongoDB performance is going to be severely impacted as long as you cannot fit your working set plus critical pieces of the index in memory,0
+MongoDB’s performance is better than that of MySQL and other relational DBs. This is because MongoDB sacrifices JOINS and other things and has excellent performance analysis tools.,1
+"MongoDB performance is unpredictably bad, and mostly averages to low hundreds ( 200 / 300 ) documents per seconds.",0
+MongoDB performance is best when the entire majority of the working dataset can be kept in RAM as it would be for latest Zipfian distributions.,1
+Mongodb performance is better than Couchbase.,1
+MongoDB's performance is derived in part from advanced stochastic branching techniques.,1
+"MongoDB performance is acceptable, but not spectacular.",0
+MongoDB's performance is significantly less than you might expect.,0
+MongoDB's performance is particularly impacted by noisy neighbor problems,0
+"MongoDB performance is horrible when it has to fetch documents from disk, but even if the documents are in memory, the same effect is expected (on aggregation queries) when data has to be move to the CPUs caches.",0
+MongoDB performance is driven primarily by the speed of I/O operations.,1
+MongoDB - Performance is slow,0
+"MongoDB performance is poor in the scene, the total throughput of less than 10 thousand per second.",0
+MongoDB performance is remarkably insensitive to Linux distro version,1
+A better approach to improving MongoDB performance is to use Micron's P420m PCIe solid state drive SSD) as the primary storage device in each node.,1
+The second factor affecting MongoDB performance is the interaction between the sharding scheme used by.,0
+This is the reason why relating advertised disk performance to actual MongoDB performance is difficult.,0
+"You'll hear this a lot, but the most important key to MongoDB performance is to size the system to keep the “working set” in memory.",1
+"MongoDB performance is better than the one of MySQL (which is to be expected, given the fact that all major",1
+The key to MongoDB performance is thoughtful data model design,1
+MongoDB performance is typically not CPU-bound,1
+"MongoDB performance is great, it's way faster than Mysql.",1
+MongoDB performance is significantly worse here than the single node configuration.,0
+MongoDB performance is not any longer affected by indexing and no data loss will occur in MongoDB,1
+mongoDB's performance is more stable on this infrastructure than Cassandra.,1
+MongoDb performance is penalized by HDD seek for every write operation.,0
+MongoDB. Performance is good,1
+"MongoDB performance is acceptable, but not spectacular.",0
+CouchDB's performance is terrible,0
+CouchDB's performance is in line with their needs,1
+CouchDB's performance is not as easy to google as I hoped,0
+CouchDB performance is often bottlenecked by GETting every revision with an individual request,0
+"couchDB’s performance is already quite decent and it’s not even been tuned, so I’ve never attempted to benchmark it’s behavior.",1
+"CouchDB. Performance is lousy of course, but I did it as a proof of concept, and it works ok",1
+CouchDB performance is not as good as it occured to me at the beginning and it is also difficult to implement the advanced visualizer features,0
+"RethinkDB performance is almost equal , i know something is off with my set up i have said that",0
+"RethinkDB is very slow when I using Limit or Group with Sum, Insert and Read",0
+RethinkDB is a fast and flexible JSON-based database management system.,1
+"Neo4j's performance is good overall though, especially when compared to other dedicated graph databases.",1
+Neo4j's performance is dramatically better for connected data sets – often the difference between something being possible and not possible.,1
+Neo4j's performance is at par or in many cases even better than MySQL.,1
+Neo4j performance is highly dependent on caching,1
+The key to Neo4j performance is memory,1
+"Neo4j performance is significantly better for all queries, except the simplest one.",1
+Neo4j performance is comparable with Sesame but is still 0.8 s slower,0
+Neo4J's performance is more negatively affected by the large graphs than imGraph's performance.,0
+Neo4J's performance is more negatively affected by the large graphs than STEFFI's performance,0
+neo4j performance is good,1
+Neo4j performance is highly correlative to available memory.,1
+"Neo4j's performance is better, which can be explained as follows",1
+Neo4j. Performance is an important consideration as well.,1
+Couchbase performance is awesome,1
+"Couchbase, performance is derived in part from the close understanding of the cluster topology by the SDK",1
+Couchbase performance is consistently fast even under load,1
+Couchbase performance is tied more to I/O and RAM capacity than it is to CPU,1
+Couchbase performance is best,1
+"One key to Couchbase performance is to watch your working set size, so the more working set items you can fit into memory, the better.",1
+"Redis’ performance is quantifiable and measurable by tracking several key metrics, and by monitoring these you can gain insight into how well your database is performing.",1
+Redis' performance is made up of two key factors: throughput and latency.,1
+redis performance is no where close to that of mongodb.,0
+"Redis performance is dominated by cache misses, so maybe we can compensate this with one indirection less?",0
+"Although the Redis performance is better in a lot of cases, it is not the Holy Grail.",0
+Redis performance is incredible.,1
+Redis performance is never affected,1
+"Redis performance is better than memcached there is to fill a bug or start a conversation, as there is something odd.",1
+Redis performance is roughtly half that of Memcached.,0
+The leading cause of poor Redis performance is reaching the upper limit of your plan's performance.,0
+"redis performance is impacted by a large number of volatile keys, especially under memory pressure",0
+Redis performance is generally sensitive to the size of the key fields in the KV store and the latency for servicing a KV cache,0
+"Redis performance is very good, because it is pure memory operation, can handle more than 10 million times read and write operations per second, is the fastest known performance of Key-value DB.",1
+"Despite that it is fast, Redis performance is also driven by several known factors: network bandwidth, CPU, RAM speed, virtualization and network protocol",1
+Redis performance is just as good or better in most scenarios.,1
+Redis performance isconsidered a non-issue,1
+Redis performance is acceptable but still not comparable with the tsdb perfor- mance,0
+Allegro performance is as good as possible,1
+Allegro performance is also a huge issue,0
+MySQL performance is acceptable if it's within 2x from Oracle.,1
+MySQL performance is PHP data caching,1
+"Another negative effect, which could be further affecting MySQL performance, is buffer pool pollution.",0
+MySQL performance is largely defined by keys and how efficiently queries can use them.,1
+"However, the MySQL performance is worse than our current server!",0
+"Improving MySQL performance is crucial for improving a website responce times, reduce server load and improve overall work efficiency of a mysql database",1
+"MySQL performance is highly variable, and it's incredibly easy to write simple queries that have truly abysmal performance.",0
+"Writing a post bragging about MySQL performance is a pretty risky, perhaps masochistic endeavor.",0
+MYSQL PERFORMANCE IS POOR,0
+The most common problem with MySQL performance is unoptimized queries.,0
+MySQL Performance is not yet there ;-)),0
+MySQL performance is very high because of unique storage engine architecture.,1
+MySQL's performance is not even close to what Percona Server can do with SSDs.,0
+MySQL performance is vital for any database-driven website,1
+"MySQL performance is just fine, when the database is consistent and solid",1
+MySQL performance is also better in last versions (5.5) and you can get an improvement on performance about 20% respect 5.0 version.,1
+mysql performance is very slow on Interix,0
+MySQL performance is the same,1
+MySQL Performance is more than just using the query cache.,1
+"MySQL performance is a little bit slower in GTID replication, especially, on the slaves. mysql_upgrade script might cause troubles on a server",0
+The MySQL performance is good if the value of Key Read Efficiency is 90 percent and above.,1

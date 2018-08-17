@@ -1,0 +1,440 @@
+review,sentiment
+"fast write and read performance, and delivering true linear scale performance in a masterless, scale-out design, bests its top NoSQL database rivals in many use cases.",1
+delivers higher performance under heavy workloads,1
+presented relatively good performance in INSERT-only,1
+performance in READ-and-UPDATE was better than the other two products. Cassandra’s READ-and-UPDATE might have been higher than READ-only due to Cassandra’s excellent insert throughout.,1
+probably showed poor performance because the large data size exceeded the physical memory size.,0
+the performance will relatively decrease,0
+The reading and writing performance improved as more compactions are done.,1
+"operates on a memory base and places high performance above data scalability. If reading and writing is conducted within the usable memory, then high-performance is possible.",1
+performance is not guaranteed if operations exceed the given memory.,0
+"how excellent writing abilities, but its reading performance did not meet expectations.",0
+demonstrated superior performance over other NoSQL databases when it comes to throughput and latency across multiple configurations.,1
+"High performance for instantaneous, always-on experiences",1
+Is typically faster when inserting (much faster for more simple inserts),1
+"is much more sane to deal with, it’s insanely fast, and managing the data is a no-brainer for us.",1
+"he amount of data grows, overall system performance should remain predictable if the overall solution was designed and implemented with the user expectations in mind.",1
+the performance can be made more predictable by having sufficient hardware processing capability as well as the network and storage devices sized appropriately.,1
+"We're evaluating, but our benchmark shows that single insert in rethinkdb is not good. Performance is our biggest concern and it become a blocker for us to adopt it.",0
+"you can take advantage its multi-threaded, multi-core, high performance NoSQL solution. This means that you can run several high throughput operations in parallel with 99% response times that are less than one millisecond. You can expect the same predictable performance running in-memory",1
+"Performance is a big focus in the 4.5 release. Global indexes can now be optimized for in-memory operation, making them faster and lock-free. Array elements in a document can now be indexed as well, which makes the data in them searchable without them having to be extracted and turned into redundant, scalar elements.",1
+"According to press release, the extensions ""increase performance of these queries by orders of magnitude.""",1
+"the focus on maturity, performance and usability, as well as closing the gap on ""entitlements,"" like joins, strong indexing and query tooling, show that at least one NoSQL vendor is serious about competing with the RDBMS incumbents",1
+address the challenges that the relational model does not by providing the following solution an architecture providing higher performance per node than RDBMS,1
+A non-locking concurrency control mechanism so that real-time reads will not conflict writes,1
+has excellent single-row read performance as long as eventual consistency semantics are sufficient for the use-case.,1
+does not support Range based row-scans which may be limiting in certain use-cases.,0
+Full index support for high performance,1
+"Optimized for read, well suited for range based scan, fast read and write with scalability.",1
+Fast random read/write,1
+Full index support for high performance,1
+Basically it says try to avoid  MR queries as it single-threaded and not supposed to be for real-time at all.,0
+"Meybe aggregation framework will be change something, right now map reduce is dam slow",0
+"Most of the performance limitations  still remain in version 2.2. The engine still requires that every record get converted from BSON to JSON, the actual calculations are performed using the embedded JavaScript engine (which is slow), and there still is a single global JavaScript lock, which only allows a single JavaScript thread to run at a single time. There have been some incremental improvements  for sharded clusters. Most notably, the final Reduce operation is now distributed across multiple shards, and the output is also sharded in parallel but I would not recommend it for real-time aggregation in version 2.2.",0
+"Most jobs can be rewritten to use the Aggregation Framework. They usually run faster (20x speed improvement vs. Map/Reduce is common in version 2.2), they make full use of the existing query engine, and you can run multiple commands in parallel.",1
+"There have been significant improvements in version 2.4. The SpiderMonkey JavaScript engine has been replaced by the V8 JavaScript engine, and there is no longer a global JavaScript lock, which means that multiple threads can run concurrently.",1
+The engine is still considerably slower than the aggregation framework,0
+I still do not recommend using it for real-time aggregation in version 2.4 or 2.6.,0
+The upcoming 2.4 version has another javascript engine (V8) that should improve performance,1
+"And here's were I run into problems. This query took over 15 minutes to complete! the task of performing this query should be split between all shard members, which should increase performance. I waited till Mongo was done distributing the documents between the two shard servers after the import.",0
+"The price of using  is speed: group is not particularly speedy, but it is slower and is not supposed to be used in “real time.”",0
+"I thought it was used to process a large amount of data faster than alternatives. I think I see now that it's more about the ability to process huge amounts of data that would otherwise be impossible to process on a single machine, and speed isn't a factor",0
+f course the purpose of it is to process a large or huge amount of data fast. It is just the implementation that isn't very fast,0
+"Is as parallelizable, scalable as it comes, and you can make it ""faster"" by adding more hardware",1
+Its performance just isn't that great. This is a known issue; see for example where a naive approach is ~350x faster than M/R.,0
+"This is really disappointing though. I wonder where the bottle neck is? Perhaps because it is single threaded, so the server coordinating all the shards can only go so fast? I'm also curious about the results. It appears all 10 million docs where mapped, when most should have been excluded by the query.",0
+"It has some performance penalties which have been covered on SO before - basically unless you are able to parallelize across a cluster you are going to be running single threaded javascript via Spidermonkey - not a speedy proposition. The index, since you are not being selective, does not really help - you just have to scan the whole index as well as potentially the document.",0
+"Is very fast, but the API is very 'atomic'.",1
+Its sheer speed of the response to those queries is the payoff for the extra work of dealing with the variety of structures your data might be stored with.,1
+"As the data stored in database get bigger and bigger, it proves that it is much faster than the other. The other one is only faster when the stored data is small.",1
+Its performance is not that great and can't be compared to the other one.,0
+Use it in order to speed up your existing application.,1
+"It is simply faster, but not suited for prototyping",1
+Use it if you need really high performance.,1
+Beating the performance it provides is nearly impossible. Imagine you database being as fast as your cache. That's what it feels like using it as a real database.,1
+"It is perfectly suited for rapid prototyping. Nevertheless, performance isn't that good. Also keep in mind that you'll most likely have to define some sort of schema in your application.",0
+"Because there is no schema! Altering tables in traditional, relational DBMS is painfully expensive and slow.",0
+"Nevertheless, it tries to optimize as far as possible without requiring you to define a schema.",1
+Use it if performance is important and you are willing to spend time optimizing and organizing your data,1
+"most applications will just handle the generalized case and use a caching system such this one, which is a lot faster than either a high-performance SQL database or a document store.",1
+There was the saying that it is 10 times faster than Mongo. That might not be that true anymore. The other one claimed to beat memcache for storing and caching documents as long as the memory configurations are the same.,0
+"It's widely mentioned that it is ""Blazing Fast"" and the other is fast too.",1
+Numbers are going to be hard to find as the two are not quite in the same space. The general answer is that Redis 10 - 30% faster when the data set fits within working memory of a single machine.,1
+you may start seeing some performance decrease,0
+"I'm personally a fan, but frankly, they are unlikely to perform either better or worse.",0
+"Up to 5000 entries it is faster even when compared to the other then it becames incredibly slow, probably the array type has linear insertion time and so it becomes slower and slower. mongodb might gain a bit of performances by exposing a constant time insertion list type, but even with the linear time array type (which can guarantee constant time look-up) it has its applications for small sets of data.",0
+"If you have the choice (and need to move away from flat fies) I would go with it. Its blazingly fast, will comfortably handle the load you're talking about, but more importantly you won't have to manage the flushing/IO code.",1
+"I think that it would be much faster than all of them, but I didn't try it for my test case yet.",1
+It is generally much slower than the others,0
+"After hearing so many good things about it's performance we decided to give it a try to solve a problem we have. I started by moving all the records we have in several mysql databases to a single collection in mongodb. This resulted in a collection with 29 Million documents (each one of them have at least 20 fields) which takes around 100 GB of space in the HD. We decided to put them all in one collection since all the documents have the same structure and we want to query and aggregate results on all those documents. This query took 1475894ms which is way longer than what I would expect (the result list has around 60 entries). First of all, is this expected given the large number of documents in my collection? Are aggregation queries in general expected to be so slow in mongodb? Any thoughts on how can I improve the performance?",0
+"So, having recognized that there could be a performance issue using it, what other alternative database (must be horizontally scalable database) could serve this purpose?",0
+"As for it's performance, as long as those indexes can fit in ram you should be fine.",1
+"Better querying, data storage in BSON (faster access), better data consistency, multiple collections",1
+"You could get a speed up in it's case by parallelizing the inserts. Basically if you'd run multiple processes/threads you'll see the speed going up. That being said, it could improve the speed of writes.",1
+"In case of it, due to the locks involved, parallelism will not help.",0
+"I have never used server side javascript execution in it (it is not advised anyway) and their map/reduce has awful performance when there is just one node. Because of all these reasons I am now considering to check out the other one, maybe it fits more to my particular scenario.",0
+"The fact is that SQL JOIN operations kill performance, especially when aggregating data across those joins.",0
+Do you need fast hot-query performance? Go with it,1
+"It is great in this scenario, the master node is automagically elected, and failover is pretty fast.",1
+I just don't understand that. It's super fast and not restricting at all...,1
+"I have read all these articles about how fast can be, for example single row read can take about 5ms.",1
+says here that you can expect it's performance to degrade over time if your model requires you to update the same row over and over.,0
+I am running the mentioned query but the performance is really low for 3 nodes running on 3 separate disks,0
+My personal testing has demonstrated up to 3 orders of magnitude increased random read performance when the workload was entirely bound by the tps of the disks.,1
+"It’s not suitable for production, but it’s ok when developing and testing. Due to poor performance I had to change ab parameters to 10 concurent requests and 1000 total to get at least some results. First run ended with approx. 160 req/s, but next batch dropped to 32 req/s and the third didn’t even finish.",0
+"I didn’t investigate the root of the inconsistent performance. Test runs showed something between 1200 and 1300 req/s, with the mysqld process often consuming the whole capacity of one core.",0
+"This one time the allocation happended during the test run (it was recorded in the mongod output log so it wasn’t hard to find out the reason), hence the bad performance.",0
+"No way it is so ""slow"".",1
+"We chose it for scalability and read and write performance at extremely high load. For operational efficiency, we’ve gone through multiple stages of performance optimization.",0
+"The buffered writes performance shows improvements in efficiency for it compared to vertical writes. While the write pattern is choppier, it is doing many fewer writes as the previous stage. These writes are larger, but the host CPU utilization decreases significantly.",1
+The memory-tier is essentially a higher performance backend for the most recent data.,1
+Maybe possibly have performance issues if there are a lot of notifications,0
+"It's worked out alright and the performance is good, but I know for a fact that continual maintenance of these flat-file databases will be a nightmare in the future.",0
+"I'm looking at it to hop on board with a little NoSQL for my user's bulk data. Each user couldgenerate 60,000 rows or more. With a continually growing number of users, I get to worry about performance in the future.",0
+I agree that it is in no way a silver bullet. I was mostly concerned that having too many records would eventually lead to a slow database,0
+"As Dave said it is optimized to handle large amounts of data not toy examples There's a tax for ""waking up the elephant"" to get things going which is not needed when you work on smaller sets.",0
+"If you will merge data into one file - performance will improve seriously, while you will still have job start overhead.",1
+It is built with scalability and fault tolerance in mind - in many cases scarifying performance.,0
+"By seeing the output of your program, I think you've used a number of reducers and mappers. Use it according to your need . Using too many mappers or reducers will not boost up the performance",0
+So see there are much more overheads here. And you perceiving a degraded performance because of these reasons.,0
+Suppose you have a problem which could be solved in say O(n) complexity what it will do if you apply lets suppose K machines then it will reduce the complexity by K times. So in your case the task should have performed faster,1
+"Every test I have personally run (including using your own data) shows aggregation framework being a multiple faster than map reduce, and usually being an order of magnitude faster.",1
+using default parameter value gives us sub optimal performance. There is some work done in this area by Herodotos Herodotou to improve performance.,0
+"OK, Is there any way for changing parameters( parameters that are phase independent ) in each phase( phase like read, map, collect spill, etc.) because if i will stop daemons running on a node it will not resume computation ( and it will redo all the phases and it may start speculative execution) and performance will degrade.",0
+"What I want to tell that performance of it's cluster should be assessed in relation to some MR job you going to run on it. Some jobs will be IO bound and the rest of the system performance will be not relevant. Some will be CPU bound in Map Stage, and the rest is not important, etc..",0
+I am working on performance analysis and I am running some benchmarks on it. What's surprising is that Grep takes almost 1/10 of the time it takes wordcount to run which is very non-intuitive.,0
+"The time taken for running the mapreduce program in multinode cluster is much larger than the time taken in running single node cluster setup. Also, it is shocking to observe that the basic Java program(without hadoop) finishes the operation faster than both the single and multi node clusters.",0
+"It will be faster than local sequential jobs when the amount of the data be bigger than the local resources (ram, HD, cpu) and/or when the cost of initialize the containers and the transfet of data among them is minimized by the number of nodes working in parallel.",1
+I increased the input split size from 128MB to 256MB. The execution time of the job has been decreased by a minute. But I could not understand the behavior.,0
+"Although among 0.12 improvements are faster plan generation and optimization to COUNT, the educated guess, I believe, should be that the performance improvement will not be dramatic.",0
+"The problem is: always processes the ""STREAM ... through"" step only in two containers with 1 vcore in each, even all other vcores are free in the cluster. It causes very bad performance. I want to improve parallelism: increase number of containers and vcores for the ""STREAM ... through"" step.",0
+"Unfortunately it seems I am doing something wrong because the difference in performance for single, random operations is huge",0
+"As you can see, it is terribly slow for randomized reads and updates. The documentation recommends using bulk operations which might be fine for inserts, but I do not see how I would realize bulk reads considering YCSB is asking for reads one by one.",0
+"This makes it a lot faster, but still a factor of 7 slower than the other ones, this is consistent with the benchmark published here, using the same version.",0
+"Using it, I'm getting very poor performance trying to compute a ""last pass"" and ""last fail"" time over a set of automated test results.",0
+"We're experiencing an issue where CouchDB GETs and POSTs are taking upwards of 180s to complete. CouchDB processes are dominating the CPU, so I expect that this is a problem where CouchDB can't keep up with its indexing. Any idea on how to optimize performance in a situation like this where we have a steady stream of records that need to be indexed ASAP?",0
+The DB server was tuned for better performance,1
+We saw that this gives about 10% performance improvement over the standard running outside the chroot.,1
+"But, as Spark is natively written in Scala, I was expecting my code to run faster in the Scala than the Python version for obvious reasons.",0
+Since code is mostly limited to the high level logical operations on the driver there should be no performance difference.,1
+Raising these values beyond the limits of your hardware causes more contention and decreasesperformance.,0
+Is a high-performance and feature-rich NoSQL database that forms the backbone of the systems that power many different organizations – it’s easy to see why it’s the most popular NoSQL database on the market,1
+"The variant features are designed to empower organizations to be more agile and scalable and also enables applications to have better flexibility, fasterperformance, and lower costs.",1
+Is a high-performance and feature-rich NoSQL database that forms the backbone of numerous complex development systems.,1
+Lead to common mistakes that lead to poor performance and unmet requirements,0
+The performance in a NoSQL database cluster does not degrade with the addition of new nodes.,1
+"Cannot execute this query as it might involve data filtering and thus may have unpredictable performance. If you want to execute this query despite the performance unpredictability, use ALLOW FILTERING",0
+"This is a form of the MapReduce family, butperformance depends on how carefully the keys are designed.",0
+The time it takes to keep these databases in sync can decrease system performance.,0
+"Experimental results confirm that the strategy will effectively contribute in solving fragment re-allocation problem in specific application environment of NoSQL database system, and it can improve system's performance.",1
+solutions are highly flexible and permit you to define schemas on the fly with little or no adverse effects on performance,1
+they are extremely functional and performance oriented,1
+was built from the ground up with scalability and performance in mind,1
+a development environment that makes it easy to continually address performance,1
+Improving browser performance and reducing resource consumption,1
+There is some performance cost to using compressed storage.,0
+so that it can be scaled up or down as per the requirements without any degradation in performance,1
+"supports sharding, which automatically partitions data across servers for increased performance and scalability.",1
+so often catastrophe recovery comes at the expense of speed and performance.,0
+This feature gives a real advantage over relational stores on the basis of much greater flexibility and generally improved performance.,1
+"Furthermore, the keys are stored as sorted for better performance.",1
+"This way, subsequent requests with the same filter are even faster, resulting in a huge performance advantage over search queries.",1
+isn’t recommended because it decreases performance; the search engine first needs to translate the query string into its native JSON query language.,0
+The main drawback is the overhead required by locking and the associated performance degradation.,0
+Avoiding the joins to traverse friend relationships can speed up performance significantly,1
+All this flexibility comes along with a promise of low-cost scalability and high performance.,1
+"That’s why adding more replicas to our cluster won’t increase index performance, but still, if we add extra hardware, it can dramatically increase search performance",1
+This implementation will slow down the read performance.,0
+"These mappings are usually accompanied by cache mechanisms, to maximize performance.",1
+is a good choice when you need scalability and high availability without compromising on performance.,1
+Multiple rounds of performance tuning must be done before the cache is migrated to it in order to perform well.,0
+"Once ACID checks are enabled, the speed of the database drops to near the performance of traditional databases.",0
+"When compared to the other ones, it's more scalable and provide superior performance,",1
+"For write-heavy records, it’s worth bearing in mind that indexes might actually degrade performance overall.",0
+offer very high performance and highly scalable architecture what make them a perfect candidates for use in big computations.,1
+"Massive write performance, flexibility in the creation of collections, and fast key-value access are some virtues of it.",1
+provides the ability to scale horizontally to meet the needs of large volume data and to avoid traffic problems that can reduce performance,1
+Read and write requests can be handled without impacting each other's performance Handles search queries comprising millions of transactions and lightning-fast speeds,1
+offers characters from both a relational database and the other ones in terms of good performance and various data format support for big data.,1
+Many new features have been introduced in later releases along with lots of performance-related enhancement work.,1
+"I’d want to use it for scalable high performance operational data access, lots of reads and writes at high speed and [for] semi real-time and low latency for end users",1
+This drastically affects the performance of the overall system.,0
+"is also built for high performance, making it a great counterpart for building ever demanding, high traffic web and mobile applications.",1
+"When using hashing, row-keys are distributed equally in a cluster, achieving maximum performance.",1
+At the core of most large scale web applications and services is a high performance data storage solution,1
+"Is known for high performance, high availability, and low cost",1
+you can usually use what capabilities are provided without wondering if you’re brutalizing performance too much.,1
+This allows for faster performance even in the case of partitioned databases.,1
+"This comes at the cost of performance when inspecting entire elements of the table. If you do some reading and some writing, and they are interleaved, using this option might even hurt performance.",0
+When executing queries the performance is less than normal jobs on HDFS due to the overhead of the system.,0
+"You can configure it for durability, but at the cost of some performance",0
+"delivers on its promise of horizontal scalability and fault tolerance, and how its log-structured storage subsystem helps it achieve impressive write and read performance.",1
+Just the act of adding columns to the database even to very large tables can cause unacceptable performance problems in production.,0
+"So we have with deployments of production and performancetesting environments and anywhere we have preexisting data, we have a problem which is that we can't just blow away the database.",0
+"And you will quickly find, whoa, we're not getting the performance we need.",0
+"It allows you to build high-performance, low-latency applications with ease and efficiency.",1
+It is particularly good at analyzing large sets of data without any significant impact on performance,1
+offers high performance and helps to store large data sets with uncertain query requirements,1
+you can create and scale up or down your request capacity for your DynamoDB table without downtime or performance degradation.,1
+The frequency of these operations has an impact on the overall performance of the system.,0
+Its performance sets the bar high for its competitors.,1
+"achieve incredible performance even while serving immense numbers of simultaneous users.On the other hand, even if such performance is theoretically not optimal, performance can remain stable even as the number of users or some other metric, such as number of transactions, grows by several orders of magnitude",1
+They provide optimized performance for queries over very large datasets.,1
+Although performance is the main issue for the considered applications,0
+"You can also search inside the value, although the performance may be suboptimal.",0
+"gives numerous other advantages, such as a consistent and predictable performance, flexible data modelling, and durability.",1
+"They certainly ease the task of mapping the object model to the relational data model, but do not deliver optimal query performance.",0
+Especially semi-structured data is often modeled as big tables with many columns that are empty for most rows (sparse tables) which leads to poor performance.,0
+The multitable joins of relational database management systems (RDBMS) reduce performance and make horizontal scaling more difficult.,0
+"It shows very good performance, especially on scalable architectures",1
+Index-free adjacency is mechanically sympathetic and allows the query engine to have a significant performance boost while traversing the graph,1
+"was able to support complex data storage, while maintaining the high-performance approach of other NoSQL stores.",1
+"This is an open source, real-time NoSQL database and key-value store. It trades off performance for strong data integrity guarantees.",0
+t was designed as a scalable database with performance and easy data access as core design goals.,1
+"each of the tokens can be preprocessed to improve search performance. By denormalizing the bid’s data, you gain performance and help scalability.",1
+"the client will stall waiting for the server to complete, and this can potentially affect performance of the client and is very much against the philosophy of decoupling the components of the system described previously.",0
+have been designed to address specific issues of horizontal scaling and performance issues related to intensive read and write operations.,1
+"multi-value fields require the creation of accessory tables that must be joined to gather all the values, resulting in poor performance when the cardinality of records is huge.",0
+It uses an in-memory technology that purportedly provides performance up to 100 times faster than other ones.,1
+"How much time will you need to scan all your logs? ... The third option does solve the usability problem, but based on the fact that you have one or more nodes, can show the unreliability and the read performances problems",0
+Fail to provide adequate performance and/or adequate scalability and/or adequate data availability,0
+Is another player in the field and has focused on improving NoSQL performance by optimizing its offering specifically to take advantage of the characteristics of flash-based storage,1
+"As a result, every time a computer has to go to disk to fetch a piece of data, performance suffers",0
+"As a result, it’s hard for the users or cluster operators to predict the performance of their applications—whereas if those applications were running in containers, they’d each be guaranteed a share of the CPU, reducing the unpredictability of their performance.",0
+"is a high-performance, replicated queue that enables big data publish/subscribe workloads to scale.",1
+your application’s performance can be adversely affected by other applications running on the same machine.,0
+This policy improves write performance without compromising data reliability or readperformance.,1
+"Graph databases put relationships first, which means complex relationships are possible, without compromising performance",1
+Various types of files Queries against such sources do not have predictable performance,0
+"They are highly scalable, maintain ACID compliance and give more efficient per node performance",1
+Means pushing the system's performance to its limits without losing reliability and stability,1
+Is coined to solve the scalability and performance problem when processing Big Data that relational databases were not designed to handle,1
+"You’ll gain a tremendous amount of flexibility and shortened development time, in addition to all of the performance and scalability benefits that offers automatically.",1
+Is a direct result of the huge difficulties in making these features scale across a large distributed system while maintaining acceptable performance.,0
+"When the load increases, in order to keep acceptable performance, Jelastic will allocate up to this number of cloudlets.",1
+"We can apply an index to the author field and see performance benefits, especially as our data grows.",1
+It also places less focus on atomicity and consistency than on performance and scalability,1
+monitoring tools can drastically improve your ability to solve cluster issues and greatly increase cluster reliability and performance as a result.,1
+"The design techniques in such cases would depend on your choice of NoSQL database. Hence, try not to encrypt everything in your database, as it can lead to poor performance.",0
+query performance is not stable; its performance tuning also requires experience and in-depth knowledge,0
+try to offer more query performance or higher transaction levels by not implementing all the features of a traditional SQL database server.,1
+"Obtaining the maximum performance out of it requires careful designing of tables, taking its distributed nature in to consideration.",0
+"Failing to properly understand the limitations can lead to degrading performance of specific operations, including reads, writes, and check and swap (CAS) operations.",0
+"Even though it behaves like one, it is not a database and does not enjoy the same performance functionalities",0
+"Primarily designed for data integrity, not performance.",0
+"There is a performance penalty when writing to the database because each index must be updated, but the speed gain when querying usually makes up for this.",0
+Generally sacrifice consistency and availability in exchange for performance and the ability to scale in a distributed nature,1
+One of the most difficult challenges that the real-world DBA faces is performance tuning,0
+"These systems offer significant performance increases, but usually at the cost of ACID compliance.",1
+"Finally, binding affects query performance.",0
+Thus putting related columns in the same column family improves performance.,1
+Is often desirable for applications where both performance and strong consistency are important.,1
+"While typically make this easy, this can itself be a source of performance problems.",0
+The trade-off is between capabilities and performance versus cost and complexity.,0
+"What is simple stays simple, and what is complex becomes possible, without crashes, instabilities, or performance bottlenecks.",1
+"provides blazingly fast performance and only the most basic set of features, allowing developers to build any kind of database on top of it.",1
+All can be implemented with parallel execution for high performance over large data sets.,1
+There is no mechanism to ensure performance,0
+This is useful if you have a lot of logging traffic on your site and performance is an issue.,1
+"The standard log is the replacement for the legacy log, which supports all new logging concepts and also provides better performance.",1
+"On databases that support sequences, you’ll get far higher performance by selecting the SEQUENCE strategy.",1
+performance was not the primary concern.,0
+the availability of connections to the database and how those connections affect the performance of the database itself.,0
+"if search performance is a top priority for your organization, you should consider using it.",1
+commits can be expensive and can impact query performance.,0
+You can get a significant performance gain by choosing a right session handling backend.,1
+Leads to more predictable performance,1
+"Developing a high-performance, feature-rich application that uses it directly is difficult and it's limited to Java applications.",0
+"A trade-off might be performance versus scalability, which may mean restructuring the integration layer in order to use a NoSQL database over a particular RDMS solution.",0
+"the performance is degraded, then it may also reduce availability.",0
+allows high-performance and quick processing of information at massive scale,1
+Writes are much slower than reads and may affect overall performance,0
+"In most cases, performance is better than other engines.",1
+"That comes at a cost, though: they require considerable expertise to set up and tune to achieve that performance.",0
+Is more lightweight and better in performance compared to its earlier counterparts.,1
+"The downside is that each tool introduces a potentially long learning curve, possible performance concerns, and of course, bugs",0
+"Options to trade robustness for performance exist, though they are not enabled by default",0
+The bottleneck is on it (the source); there's one process or thread there which is at 100% CPU usage for the whole duration of the process.,0
+"All three start out very fast - at least thousands of documents per second get copied initially. But then they all slow down. After about 20 million documents get copied, River slows down to about 20 documents / second. Logstash is about the same. Replication also slows down.",0
+"Because speed keeps decreasing all the time, there's the concern that it will eventually be unable to keep up.",0
+It takes forever to load (4 hours and still no result).,0
+"I'd expect to have some overhead, but an order of magnitude (and some) seems crazy for what is essentially a read!",0
+"Fundamentally, chooses a ""slower"" protocol because it is so universal and so standard.",0
+You may see the effects of disk latency multiplied.,0
+I am not saying that it's actually fast and your results are incorrect. Quite the opposite: it's slower than many people expect. To some degree it has room to improve and optimize; but primarily has decided that those costs are worthwhile for the broader good it brings.,0
+"Fails the benchmarks, and aces the college of hard knocks. I suggest that you next benchmark a full load on it, simulating your expected demand for multiple concurrent access, and get as close as you can to your real-world demands on it.",0
+"I think it comes down to reading, parsing, and then serialising the entire document which just seems odd.",0
+It just seems odd that after all the time and effort it takes to pre-build views for good performance it would be let down by the read (which should[?!] be a simple fetch of the prepared data/original document from disk).,0
+"Also, virtual systems are going to see highly degraded performance because of I/O contention to the disk.",0
+"I believe the problem is related to the size of the documents (400-600kb each), the bottleneck during reads appears to be CPU according to dstat.",0
+Tend to slow down writes,0
+"Is mostly cache, and it is really fast, but being just a cache it would not help you much in doing medium complexity aggregation. However it is currently the best cache (my opinion) out there.",1
+"It is very fast (writes) if the data [not just the index] fits in RAM, it starts slow down very quickly if it does not.",0
+The most prominent bottleneck at the moment is the fact that it too aggressively throttles writes once a certain amount of unsaved data has accumulated in the cache.,0
+"The idea behind this is to make writes not pile up indefinitely, but to have them bound by the amount of data that the storage system can actually absorb over longer periods. However it turns out that the way this is done currently costs us some efficiency",0
+"Without the throttling, it performs significantly better",1
+Noticed as well that adding secondary indices does degrade write throughput significantly.,0
+"using the small integer `docid` keys that your benchmark is generating as the primary key can improve performance drastically (by up to a factor of 2x), especially for the smaller document sizes.",1
+It's possible that this change is less pronounced there because other things are becoming a bottleneck first.,0
+I think the somewhat chunky UUID strings that it auto generates as primary keys if no primary key is specified in the inserted document are making the documents larger and the operations more expensive than they need to be.,0
+will ship with performance improvement in many areas.,1
+"If it's going to be a really fast query (for example, selecting a small recordset by key (which is indexed)) it'll be quicker to just do it in a blocking fashion. It means less CPU work to jump between the events.",1
+"if the query is going to be potentially slow (like a complex and data intensive report) it's better to execute the query asynchronously, do something else and continue once the database gets back a result. If you don't all other requests to your web server might time out.",0
+"I think it does a really good job here. It's faster than others but unlike those key-value stores, with it you can, if you need to, do actual queries",1
+"However, the reason you're using it is probably because it's much more performant that more convenient alternatives",1
+"This is nice, and as others have noted there are similar APIs that can be used with SQL. But I find it bad practice to extend arbitrary queries with additional conditions. This is very likely to lead to poor performance and perhaps correctness problems.",0
+"they're ""quite long"" and have less potential for optimizing the performance",0
+"Thing is, some SQL databases have columnar storage, and in there selecting everything, then filtering with an attached function would eliminate the performance benefit of not selecting all of the fields.",0
+"The whole NoSQL movement was to sacrifice ACID in exchange for speed and scalability, which it has neither. You effectively get database that not only performs slower in single instance[1], but also can't even scale horizontally.",0
+it's pretty cool that you can make a choice between fast writes or safe writes. You can't have both but at least you can have the choice.,1
+The underlying systems have only gotten more reliable and faster then they were 10-15 years ago.,1
+we found that stripping the unneeded data massively improved the performance of our queries.,1
+"However, it did not seem to improve whether we stripped data or not. We are not sure if this means that RethinkDB is already intelligent enough to ignore data it does not need, or if it means that itis not optimized enough to show any performance improvements. It is an interesting quirk nevertheless.",0
+"it is clear that, for our uses, it is the best solution. At this point in time, it is simply faster and more optimized than the other ones.",1
+"For both queries, MongoDB looks to be about three times faster than RethinkDB. Even before we tested it over the 10,000 trials, we anecdotally noticed that RethinkDB was a bit slower, but the script confirmed it.",1
+The performance of RethinkDB is not quite as good as other similar databases but this is rapidly improving and from what I have seen these performance improvements are not impacting the quality of the rest of the system.,0
+"Honestly, though, performance wasn't stellar at the time. We weren't using anything complex in it--we really just wanted a place to keep schemaless metadata. It handled data just fine, but basic retrieval queries took several hundred milliseconds to complete.",0
+I'm sure that enabling fsync would result in further degradation of performance.,0
+"achieves a throughput that is 1.5 times higher than the closest competitor. Note that not only is the other optimized for writes and is well-known for its heavily optimized write path, but this benchmark uses a ConsistencyLevel of ONE for Cassandra, which only requires an acknowledgment from a single replica. A node failure in the other that occurs after the acknowledgment but before the data has been transferred to other replicas, can lead to data loss. In contrast, no operations is considered complete until it is fully fault-tolerant, and yet it still outperforms the write-optimized the other ones on the overall benchmark.",1
+"It achieves very high throughput. Specifically, is 3-4 times faster than the other ones.",1
+"performs reads quickly and, consequently, outperforms the others by a factor of 3-4 on this benchmark",1
+"is nearly twice as fast as the other, even though it is performing a retrieval by a non-primary key",1
+"was unable to finish the benchmark in the allotted time, averaging 6.4 operations per second for an hour. A previous version (v2.0) of it was able to finish this benchmark in time, and underperformed the other ones.",0
+is four times faster than others and provides nearly double the throughput that others provides.,1
+"I noticed that it had a highly variable write throughput. I was also surprised at how low the numbers were. Which led me to discover it's concurrency control: a single mutex over the database instance. Furthermore, in tracking the insert performance along with memory utilization, I could see that getting to more than 300 million records would spill some of the data set to disk.",0
+"A couple of the client nodes were slower, so they took a bit longer to finish up their portion of the load.",0
+"For a system which eschews consistency and durability, the write performance on it looks atrocious. Initially, I thought that it completely trashing the other on the write performance. The result was a complete surprise.",0
+Highly concurrent b-tree implementation with fine grained locking,1
+Buffer manager and transaction log tuned for SSD,1
+Completely lock-free Split and Move operations,1
+"Has a big fat lock, severely limiting concurrency",0
+It relies entirely on the kernel buffer manager,0
+"The database has some terrible performance issues, it is hosted on an azure VM (28 GB RAM, 500 GB storage) with an the IIS running on a separate VM. The DB as it stands now is around 20 GB in size, with expected growth over the years to about 650 GB.",0
+"The performance is atrocious, with requests for inserts or fetching taking up to 1.5 minutes and some even timing out.",0
+"I don't have any special love for it as it's been a bit of a pain in the neck for me as an Ops guy, but our devs are pretty happy with its performance.",1
+Writes are acknowledged after they are written to disk. There is no possible data loss. This configuration is suitable for applications where durability is more important than performance.,0
+"provides greater performance than others in all the tests we ran, in some cases by as much as 25x.",1
+"in these tests we observed that it overwhelmingly outperformed key value stores, in terms of throughput and latency, across a number of configurations.",1
+"we tested a configuration that provides excellent performance and minimal possible data loss in the event of a node failure, it provides 3x greater throughput than other ones in read-intensive workloads, and 70% higher throughput in write-intensive workloads, while providing 80% lower latency.",1
+"regular expression queries have a downside, all but one type of regex makes poor use of indexes and results in performance problems. For a production server with large amounts of data, a bad regex query can bring your server to its knees.",0
+"has a very high speed, low latency NoSQL database.",1
+"read performance should be terrible compared to others, and the write performance is way off for reasons previously mentioned.",0
+"At the very least, you need enough RAM to hold all the database indexes because if you need to access the hard drive just to access the index, IO performance bottlenecks will simply trash your speed expectations.",0
+"This is a great improvement over the Javascript engine when it comes to performance and allows for complex queries to run much faster. It is not as flexible as Javascript, but the speed difference is huge.",1
+"This gives it performance characteristics of a cache and the durability of a database. These foundational principles make the server easy to manage, perform at high speeds, scale horizontally and provide the highest availability.",1
+"is really fast using just 464ms in AVG, no graph database comes close. That’s because lookups in a graph of a known length is faster with an Index lookup than using outbound links in every vertex.",1
+is faster at single document reads but couldn’t compete when it comes to aggregations or 2nd neighbors selections.,0
+"In order to achieve its outstanding performance, it works with an in-memory dataset.",1
+runs slower on a VM compared to running without virtualization using the same hardware.,0
+"However this does not mean that Redis is slow in virtualized environments, the delivered performances are still very good and most of the serious performance issues you may incur in virtualized environments are due to over-provisioning, non-local disks with high latency, or old hypervisor software that have slow fork syscall implementation.",0
+is designed to be a blazing fast in-memory database,1
+ensuring that is top-performing is an ongoing task that requires methodical monitoring and using the proper tools to resolve alerts when they come.,0
+"we can see that both Mongo and Redis have almost equal time in case of small number of entries but when this number increases, Redis has remarkable superiority over mongo.",1
+A high performance Thrift gateway,1
+Very fast (200k+/sec) access of data by key,1
+"Fast transactions and rapidly changing data, Best used where you need to act fast on massive amounts of incoming data.",1
+When you want to choose the backend storage algorithm engine very precisely. When speed is of the essence.,1
+"also does very well on Google Compute Engine, offering superior price/performance.",1
+The results of the test prove that it can be a great fit for IoT apps writing data with high velocity at high volumes.,1
+The new storage engine substantially improves that product's write performance and scalability,1
+"My problem is that the database write performance is getting worser, especially writes to the largest of the four databases (De) has become really bad, according to iotop the process uses99% of the IO time with less than 3MB writes and 1.5MB reads per second.",0
+"poor or missing indexes, occasionally too many unneeded indexes",0
+slow disks/insufficient disk IOPS for workload,0
+insufficient RAM for indexes,0
+It turns out that in real-life large deployments the biggest impact to performance is how well the schema design fits with the application needs.,0
+"Second biggest impact is from lack of indexes or wrong indexes or way too many indexes. But even when the schema design is perfect and indexes are optimal, it is the disk IO throughput capacity that ends up being the next limiting factor, especially to the write throughput.",0
+"Insufficient RAM will cause a lot of page faulting and add pressure to the disk IO, more on RAM needs later.",0
+"If your disk is at 100% utilization, you won't be able to process more writes any faster than you already are.",0
+"Suddenly when things were growing, it started giving bad performance and sometimes ""irrational"" performance. It would give high and low performance with no correlation to other external facts.",0
+"In this particular case however, that minor theoretical performance improvement led to a 40% performance degradation!",0
+"In addition this also demonstrates nicely why premature micro optimization, without leveraging an APM solution, in production will not lead to better performance. In some cases – like this one – it can actually lead to worse performance!",0
+"Some users may experience performance limitations as a result of inadequate or inappropriate indexing strategies, or as a consequence of poor schema design patterns.",0
+"This means that it will be faster to retrieve all of them together, as they are stored in the same place and you do not have to perform a join.",1
+"was a popular NoSQL database early on because from a developer's perspective it seemed very fast for some typical use cases. Behind the scenes, though, it wasn't actually recording the data to disk as the ""transactions"" completed, so when web sites built with MongoDB had a server crash, they would lose important data. Even worse, it was completely single-threaded for transactions (a global write lock), so when web sites actually saw production load, it neither scaled nor was fast",0
+"If you need an in-memory database or a high-performance cache system that is simple to use and highly scalable, this is what you need.",1
+is a next generation NoSQL database which can provide ultra-fast performance if tuned and calibrated correctly.,1
+Improving performance in requires having an understanding of what to expect in terms of performance for the types of commands that we’re sending to Redis,0
+These data stores offer extremely high performance and are efficient and easily scalable.,1
+"This is not true if you have one query hitting 100 percent of the query cache, and removing it can cause disastrous performance.",0
+"Look for an online bug database and search for known performance issues, especially one-second latencies.",0
+"Although its performance is better in a lot of cases, it is not the Holy Grail.",0
+is an open source key-value database that provides a high-performance cross-platform server to store your application's data,1
+clusters Use an index to improve database performance,1
+These performance limitations significantly reduce the set of situations in which document databases are useful.,0
+"It excels at flexibility, but sometimes this comes at the cost of performance for specific applications.",0
+The performance of view queries can be improved by having more RAM available with which it can cache views’ B-tree indices.,1
+"While it may seem obvious, it’s worth mentioning that faster disks, more CPUs, and more memory should increase the performance of it.",1
+use extra disk space in exchange for additional performance and for concurrency purposes.,1
+"Views are cached, making it easy to construct high-performance queries that return subsets of data or computed data-like reports.",1
+they are extremely functional and performance oriented,1
+"In order to achieve stellar performance speeds, it has a relaxed view towards Atomicity Consistency Isolation Durability (ACID) compliance.",1
+"uses master-master replication, and this introduces performance considerations because care must be taken to ensure that data remains in sync.",0
+you can only get acceptable performance by cutting corners on the data integrity features in ways that it just won't allow.,0
+is used when performance and scaling are important,1
+"It can be tuned to have better consistency, but one has to give up performance in the read and write speeds.",0
+"For simple queries, it gives good performance, as all the related data is in a single document that eliminates join operations",1
+"the more memory your operating system can use as a disk cache, the better read performance",1
+"supports sharding, which automatically partitions data across servers for increased performance and scalability",1
+"supports ACID semantics and can do so concurrently, which provides a great deal of performance benefit if one is bound to those properties",1
+"Although this is somewhat an unnatural style for a document database, for some workloads it may provide the best balance between performance and maintainability",1
+gains amazing performance in exchange for increased risk of data loss in the case of a hardware failure.,1
+"You can configure it for durability, but at the cost of some performance.",0
+allows almost linear scalability and performance.,1
+"This can be bad for performance when your app wants to store or read large amounts of data, such as images",0
+Queries against such sources do not have predictable performance.,0
+"When we use materialized views to store data from foreign tables, we make the query performance more predictable.",1
+"Using indexes, it provides a far better search performance than web storage, but programming it is more complex.",1
+Better availability and performance are achieved through the replicas,1
+"uses a replication model called Eventual Consistency. In practice, however, for many applications, they are incompatible with the availability and performance in very large environments.",0
+High performance: Couchbase has an extensive integrated caching layer.,1
+Proper configuration through the use of monitoring tools can ensure performance that equals or exceeds a physical deployment.,1
+not constrained by some of the performance bottlenecks incurred through joins.,1
+Embedding child documents as subobjects inside documents provides for easy access and better performance.,1
+you can definitely tune it to give you performance by cutting down a lot of the overheads.,1
+is a good fast read/write structure,1
+"usually cannot be driven just by wanting to do things faster, because they might not be faster - at least not in the areas where you are used for",0
+You can use it like a document database and get excellent performance out of it.,1
+With automatic sharding... it is faster in indescribable ways,1
+you won't see a huge speed difference,0
+you can horizontally scale your writes and get much better performance without the complexity of master-master replication,1
+But I am afraid that this explicit second delete request will have a negative performance impact,0
+"If you create and delete a column value rapidly enough that no flush takes place in the middle, there is no performance impact.",1
+"If you do not commit, your change does not take effect, if you commit every time, performance suffers.",0
+However we observe that query performance decreases when index size increases.,0
+roughly the size of the database when the query performance had decreased so much so you started thinking about adding other,0
+The main disadvantage we've suffered is the poor performance on unanticipated queries,0
+also require all data to fit in RAM but in exchange gives performance,0
+"makes replication and sharding (horizontal scaling) easy, inserts very fast and drops the requirement for a strict scheme.",0
+This is a challenge because NoSQL databases are usually fast(er) and ACID constraints can slow down performance significantly.,0
+performance problems when their database grows large and/or becomes complex.,0
+"One important limitation is database-level locking. That is, only one writer may modify a given database at a time. Support for collection-level (a set of documents, analogous to a relational table) locking is planned. With either database- or collection-level locking, other writers or readers are locked out. Even a small number of writes can produce stalls in read performance.",0
+"storage engine only appends updated data, it never has to re-write or re-read existing data. Thus, updates to a row or partition stay fast as your dataset grows.",1
+"data is save on several datanodes, so it can keep a great performance.",1
+"If I don't use shard, data will save on only one node, so I am worried about the performance",0
+poor write performance on large collection,0
+on our production system we still use it and it works fast!!!,1
+I'm testing on pre-production node the with our app stack and it is SLOW!!!,0
+why we see degradation in performance for the same engine? what was changed for MMAP engine between two versions and do you expect that they should behave identically.,0
+The overall performance is much worst than with MMAPv1.,0
+The tests are creating and dropping databases for each suite. So we create/delete a lot of databases. I don't know if it can explain the observed performances.,0
+is strongly recommended to avoid performance issues that have been observed when using EXT4 with WiredTiger.,0
+"If I remember correctly the ""performance issues"" were to do with heavy writes.",0
+And the performance problems are still there.,0
+"One can address this by adding an index for that specific query, however that is unpractical and I believe that there should be a better way to improve it's performance.",0
+I have encountered an example where wiredTiger performs extremely poorly when compared to the other one.,0
+"I have problem with writing on mongo for large Collection Also I don't use short key name, do you think is it affected on performance?",0
+"In our test. we import 50,000,000 documents in each time. but the performance of mongoimport degrade too fast and unstable.",0
+We think the unstable speed is caused by the flush ram data into disk. But we want to know how to improve the unstable performance.,0
+"Even we use single not shards, the import performance is still unstable and randomly.",0
+"need to lock the db when app have read and write to access same db, and now it block the performance.",0
+"I started to reproduced the structure of insert, performance were huge (about 1hour to insert 200 millions rows).",1
+Slow performance with hundred thousand of id in document,0
+"But in that case performance are very bad, only few update per seconds.",0
+"However, we have seen that the performance of MongoDb degrades on the insert operation as we add more and more items to the cache.",0
+I've been doing a lot of reading to diagnose this problem (and a few others) and have recently read that that the insert operations should be a 'fire and forget' operation which means to me it is an asynchronous call. However the operation which means to me it is an asynchronous call. performance degradation doesn't seem to indicate that this is the case.,0
+In a nutshell I have recently been working to set up a db server to act as an object cache for a website. However after setting everything up I am concerned that the performance is quite slow.,0
+My server has about 400 connections open and I've increased that number to 4000 (10 times) and this had serious performance impact - tests start to run 3 times slower.,0
+"We are having performance issue due Map-Reduce & Geo-Spatial Query to find nearby places. Moreover we need to find out a alternative to execute the following query: (may be using ""$near & $maxdistance"", which will enable us to get the data sorted w.r.t distance)",0
+"There are many factors that can affect database performance and responsiveness including index use, query structure, data models and application design, as well as operational factors such as architecture and system configuration.",0
+"Just a thought here, but batch inserts are a lot faster and TTL indexes are lot more efficient and cause less performance ripples.",0
+Creating indexes that contain all the fields scanned by the query and using indexes to sort query results often have better performance than those that do not use an index.,1
